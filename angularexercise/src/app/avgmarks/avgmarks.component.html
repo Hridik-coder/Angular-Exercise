@@ -1,0 +1,16 @@
+<p>avgmarks of students!</p>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>Average</th>
+    </tr>
+    <tr *ngFor = "let data of info">
+        <td>{{data.Name}}</td>
+        <td>{{data.Maths}}</td>
+        <td>{{data.Science}}</td>
+        <td>{{avgMarks(data)}}</td>
+    </tr>
+</table>

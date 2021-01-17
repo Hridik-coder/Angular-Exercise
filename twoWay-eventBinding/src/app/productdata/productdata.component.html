@@ -1,0 +1,21 @@
+<app-searchbtn></app-searchbtn>
+<table>
+    <tr>
+        <th>ProductImage</th>
+        <th>ProductName</th>
+        <th>ProductCode</th>
+        <th>BranchName</th>
+        <th>BranchCode</th>
+        <th>ShippingAddress</th>
+        <th>Details</th>
+    </tr>
+    <tr *ngFor = 'let i of data'>
+        <td><img src = {{i.imgAddress}} ></td>
+        <td>{{i.productName}}</td>
+        <td>{{i.productCode}}</td>
+        <td>{{i.branchName}}</td>
+        <td>{{i.branchCode}}</td>
+        <td>{{i.shippingAddress}}</td>
+        <td><button (click) = 'showDetails(i)'>DETAILS</button></td>
+    </tr>
+</table>
