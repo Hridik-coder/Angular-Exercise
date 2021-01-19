@@ -1,0 +1,47 @@
+<p>post-data works!</p>
+
+<form>
+    <label for="fname">SerialNumber:</label><br>
+    <input type="text" id="id" name="id" ><br>
+    <label for="lname">ProductName:</label><br>
+    <input type="text" id="pn" name="lname"><br>
+    <label for="lname">ProductCode:</label><br>
+    <input type="text" id="pc" name="lname"><br>
+    <label for="lname">BranchName:</label><br>
+    <input type="text" id="bn" name="lname"><br>
+    <label for="lname">BranchCode:</label><br>
+    <input type="text" id="bc" name="lname"><br>
+    <label for="lname">ShippingAddress:</label><br>
+    <input type="text" id="sa" name="lname"><br>
+    <!-- <input type="submit" (click)="createPost(post)"><br> -->
+  </form> 
+<table>
+    <tr>
+        <!-- <th>ProductImage</th> -->
+        <th>SerialNumber</th>
+        <th>ProductName</th>
+        <th>ProductCode</th>
+        <th>BranchName</th>
+        <th>BranchCode</th>
+        <th>ShippingAddress</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor = "let post of posts">
+        <!-- <td><img src = {{post.imgAddress}} ></td> -->
+        <td>{{post.id}}</td>
+        <td>{{post.productName}}</td>
+        <td>{{post.productCode}}</td>
+        <td>{{post.branchName}}</td>
+        <td>{{post.branchCode}}</td>
+        <td>{{post.shippingAddress}}</td>
+       <!-- <td><button -->
+        <!-- (click)="updatePost(post)"
+        class="btn btn-default btn-sm">Update</button></td>
+        <td><button
+            (click)="deletePost(post)"
+            class="btn btn-danger btn-sm pull-right">Delete</button></td> -->
+    </tr>
+   
+</table>
+

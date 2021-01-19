@@ -1,0 +1,24 @@
+[{
+    "id" : 1,
+    "productName" : "iphone",
+    "productCode" : 1,
+    "branchName" : "india",
+    "branchCode" : 10,
+    "shippingAddress" : "abc"
+  },
+  {
+    "id" : 2,
+    "productName" : "samsung",
+    "productCode" : 11,
+    "branchName" : "korea",
+    "branchCode" : 101,
+    "shippingAddress" : "abct"
+  },
+  {
+    "id" : 3,
+    "productName" : "xiomi",
+    "productCode" : 111,
+    "branchName" : "china",
+    "branchCode" : 1011,
+    "shippingAddress" : "abcqq"
+  }]
